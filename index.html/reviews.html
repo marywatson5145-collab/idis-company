@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Отзывы — IDIS Company (ИДИС Компани), Грозный</title>
+<meta name="description" content="Отзывы клиентов IDIS Company о строительстве домов, проектировании и ремонте в Грозном. Оставьте свой отзыв.">
+<link rel="stylesheet" href="style.css">
+<style>
+  .page-head{padding:56px 0 10px}
+  .page-head .num{font-size:18px;letter-spacing:.2em;color:var(--red);font-weight:700}
+  .page-head h1{font-size:clamp(24px,2.6vw,32px);font-weight:800;letter-spacing:-.01em;text-transform:uppercase;margin-top:12px;line-height:1.1}
+  .page-head p{color:var(--grey);font-size:16px;margin-top:18px;max-width:60ch}
+  .rev-wrap{margin-top:46px}
+</style>
+</head>
+<body>
+
+<header id="header" style="background:rgba(12,12,13,.95);border-bottom:1px solid var(--line)">
+  <div class="wrap nav">
+    <a href="index.html" class="logo" aria-label="IDIS Company"><span class="txt"><b>IDIS<sup>&reg;</sup></b><span>COMPANY</span></span></a>
+    <span class="head-tag">Строительство · Проектирование · Дизайн · Комплектация · Ремонт</span>
+    <a href="tel:+79639877733" class="nav-phone">8 963 987-77-33</a>
+    <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mtop"><span class="logo"><span class="txt"><b>IDIS<sup>&reg;</sup></b><span>COMPANY</span></span></span><button class="mclose" id="mclose" aria-label="Закрыть">&times;</button></div>
+  <a href="index.html">Главная</a>
+  <a href="about.html">О компании</a>
+  <a href="projects.html">Проекты</a>
+  <a href="services.html">Услуги</a>
+  <a href="prices.html">Цены</a>
+  <a href="reviews.html">Отзывы</a>
+  <a href="contacts.html">Контакты</a>
+  <a href="tel:+79639877733" style="border:0;color:var(--red)">8 963 987-77-33</a>
+</div>
+
+<section class="hero-nav" style="padding-top:110px">
+  <div class="wrap">
+    <a class="pill" href="index.html#about">О компании</a>
+    <a class="pill" href="projects.html">Проекты</a>
+    <a class="pill" href="objects.html">Реализованные объекты</a>
+    <a class="pill" href="services.html">Услуги</a>
+    <a class="pill" href="prices.html">Цены</a>
+    <a class="pill active" href="reviews.html">Отзывы</a>
+    <a class="pill" href="contacts.html">Контакты</a>
+  </div>
+</section>
+
+<section id="reviews" class="sec-pad" style="padding-top:0">
+  <div class="wrap">
+    <div class="page-head">
+      <span class="num">Отзывы</span>
+      <h1>Что говорят клиенты</h1>
+      <p>Нам доверяют строительство домов, проектирование и ремонт. Оставьте свой отзыв — он сразу появится в ленте.</p>
+    </div>
+
+    <div class="rev-wrap">
+      <div class="rev-grid">
+        <article class="rev">
+          <div class="quote">&ldquo;</div>
+          <div class="stars">★★★★★</div>
+          <p>Построили нам дом под ключ за один сезон. Всё по смете, без скрытых доплат, прораб всегда на связи. Результатом очень довольны.</p>
+          <div class="who"><b>Ислам М.</b><span>Частный дом, Грозный</span></div>
+        </article>
+        <article class="rev">
+          <div class="quote">&ldquo;</div>
+          <div class="stars">★★★★★</div>
+          <p>Делали дизайн-проект и ремонт квартиры. Понравился подход — всё показали в 3D заранее, по срокам уложились, качество отделки отличное.</p>
+          <div class="who"><b>Марьям А.</b><span>Ремонт квартиры</span></div>
+        </article>
+        <article class="rev">
+          <div class="quote">&ldquo;</div>
+          <div class="stars">★★★★★</div>
+          <p>Заказывали проект и строительство коммерческого помещения. Команда профессиональная, помогли с инженерией и приняли объект без замечаний.</p>
+          <div class="who"><b>Адам Х.</b><span>Коммерческое помещение</span></div>
+        </article>
+      </div>
+      <div style="text-align:center"><button id="revMore" class="btn btn-ghost" type="button" style="display:none;margin-top:34px">Открыть ещё</button></div>
+
+      <form id="revForm" onsubmit="return addReview(event)">
+        <h3>Оставьте свой отзыв</h3>
+        <div class="frow"><label for="revName">Ваше имя</label><input id="revName" type="text" placeholder="Как вас представить" required maxlength="40"></div>
+        <div class="frow"><label for="revRole">Что вы заказывали</label><input id="revRole" type="text" placeholder="напр. Строительство дома" maxlength="50"></div>
+        <div class="frow">
+          <label>Оценка</label>
+          <div class="rev-stars-pick">
+            <input type="radio" name="revStars" id="rs5" value="5" checked><label for="rs5">★</label>
+            <input type="radio" name="revStars" id="rs4" value="4"><label for="rs4">★</label>
+            <input type="radio" name="revStars" id="rs3" value="3"><label for="rs3">★</label>
+            <input type="radio" name="revStars" id="rs2" value="2"><label for="rs2">★</label>
+            <input type="radio" name="revStars" id="rs1" value="1"><label for="rs1">★</label>
+          </div>
+        </div>
+        <div class="frow"><label for="revText">Отзыв</label><textarea id="revText" placeholder="Поделитесь впечатлением о работе с нами" required maxlength="600"></textarea></div>
+        <button type="submit" class="btn btn-red">Опубликовать отзыв
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+        <div class="form-ok" id="revOk">Спасибо! Ваш отзыв опубликован.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div><span class="logo"><span class="txt"><b>IDIS<sup>&reg;</sup></b><span>COMPANY</span></span></span></div>
+      <nav class="foot-nav">
+        <a href="about.html">О компании</a>
+        <a href="projects.html">Проекты</a>
+        <a href="services.html">Услуги</a>
+        <a href="prices.html">Цены</a>
+        <a href="reviews.html">Отзывы</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+      <a href="tel:+79639877733" class="btn btn-ghost">8 963 987-77-33</a>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 IDIS Company. Строительство · Проектирование · Дизайн.</span>
+      <span>г. Грозный, ул. Геннадия Трошева, 83а · Чеченская Республика</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const mm=document.getElementById('mobileMenu');
+  document.getElementById('burger').onclick=()=>mm.classList.add('open');
+  document.getElementById('mclose').onclick=()=>mm.classList.remove('open');
+  mm.querySelectorAll('a').forEach(a=>a.onclick=()=>mm.classList.remove('open'));
+
+  const RKEY='idisReviews';
+  const eh=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  function revCard(r){
+    const st='★'.repeat(r.stars);
+    return '<article class="rev"><div class="quote">&ldquo;</div><div class="stars">'+st+'</div><p>'+eh(r.text)+'</p><div class="who"><b>'+eh(r.name)+'</b><span>'+eh(r.role||'Клиент')+'</span></div></article>';
+  }
+  function getReviews(){try{return JSON.parse(localStorage.getItem(RKEY))||[]}catch(e){return[]}}
+  function renderReviews(){
+    const grid=document.querySelector('.rev-grid'); if(!grid)return;
+    getReviews().forEach(r=>grid.insertAdjacentHTML('beforeend',revCard(r)));
+  }
+  let revExpanded=false;
+  function refreshRevMore(){
+    const cards=[...document.querySelectorAll('.rev-grid .rev')];
+    const btn=document.getElementById('revMore'); if(!btn)return;
+    cards.forEach((c,i)=>{c.style.display=(revExpanded||i<3)?'':'none';});
+    if(cards.length>3){btn.style.display='inline-flex';btn.textContent=revExpanded?'Свернуть':('Открыть ещё ('+(cards.length-3)+')');}
+    else{btn.style.display='none';}
+  }
+  function addReview(e){
+    e.preventDefault();
+    const r={
+      name:document.getElementById('revName').value.trim(),
+      role:document.getElementById('revRole').value.trim(),
+      stars:+(document.querySelector('input[name="revStars"]:checked')||{value:5}).value,
+      text:document.getElementById('revText').value.trim()
+    };
+    if(!r.name||!r.text)return false;
+    const arr=getReviews(); arr.push(r);
+    try{localStorage.setItem(RKEY,JSON.stringify(arr))}catch(e){}
+    document.querySelector('.rev-grid').insertAdjacentHTML('beforeend',revCard(r));
+    e.target.reset();
+    revExpanded=true; refreshRevMore();
+    const ok=document.getElementById('revOk'); ok.style.display='block';
+    setTimeout(()=>{ok.style.display='none'},4000);
+    return false;
+  }
+  renderReviews();
+  refreshRevMore();
+  document.getElementById('revMore').addEventListener('click',()=>{revExpanded=!revExpanded;refreshRevMore();});
+</script>
+</body>
+</html>

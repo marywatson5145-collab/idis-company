@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Услуги — IDIS Company (ИДИС Компани), Грозный</title>
+<meta name="description" content="Услуги IDIS Company: архитектурное проектирование, дизайн-проект, строительство домов под ключ и ремонт помещений в Грозном.">
+<link rel="stylesheet" href="style.css">
+<style>
+  .page-head{padding:56px 0 30px}
+  .page-head .num{font-size:18px;letter-spacing:.2em;color:var(--red);font-weight:700}
+  .page-head h1{font-size:clamp(24px,2.6vw,32px);font-weight:800;letter-spacing:-.01em;text-transform:uppercase;margin-top:12px;line-height:1.1}
+  .page-head p{color:var(--grey);font-size:16px;margin-top:18px;max-width:60ch}
+</style>
+</head>
+<body>
+
+<header id="header" style="background:rgba(12,12,13,.95);border-bottom:1px solid var(--line)">
+  <div class="wrap nav">
+    <a href="index.html" class="logo" aria-label="IDIS Company"><span class="txt"><b>IDIS<sup>&reg;</sup></b><span>COMPANY</span></span></a>
+    <span class="head-tag">Строительство · Проектирование · Дизайн · Комплектация · Ремонт</span>
+    <a href="tel:+79639877733" class="nav-phone">8 963 987-77-33</a>
+    <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mtop"><span class="logo"><span class="txt"><b>IDIS<sup>&reg;</sup></b><span>COMPANY</span></span></span><button class="mclose" id="mclose" aria-label="Закрыть">&times;</button></div>
+  <a href="index.html">Главная</a>
+  <a href="about.html">О компании</a>
+  <a href="projects.html">Проекты</a>
+  <a href="services.html">Услуги</a>
+  <a href="prices.html">Цены</a>
+  <a href="contacts.html">Контакты</a>
+  <a href="tel:+79639877733" style="border:0;color:var(--red)">8 963 987-77-33</a>
+</div>
+
+<section class="hero-nav" style="padding-top:110px">
+  <div class="wrap">
+    <a class="pill" href="index.html#about">О компании</a>
+    <a class="pill" href="projects.html">Проекты</a>
+    <a class="pill" href="objects.html">Реализованные объекты</a>
+    <a class="pill active" href="services.html">Услуги</a>
+    <a class="pill" href="prices.html">Цены</a>
+    <a class="pill" href="reviews.html">Отзывы</a>
+    <a class="pill" href="contacts.html">Контакты</a>
+  </div>
+</section>
+
+<section id="services" class="sec-pad" style="padding-top:0">
+  <div class="wrap">
+    <div class="page-head">
+      <span class="num">Услуги</span>
+      <h1>Что мы делаем</h1>
+      <p>Комплексные решения в строительстве, проектировании и ремонте. Берём проект на любом этапе — от идеи до сдачи объекта. Нажмите на услугу, чтобы раскрыть подробности.</p>
+    </div>
+
+    <div class="acc-list">
+
+      <!-- 1. Архитектурное проектирование -->
+      <div class="acc">
+        <div class="acc-head" onclick="toggleAcc(this)">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg></span>
+          <div class="acc-titles"><h3>Архитектурное проектирование</h3><p>Проекты домов на любой стадии — от концепции до рабочей документации.</p></div>
+          <div class="acc-price">от<b>200 ₽/м²</b></div>
+          <span class="acc-tog" aria-hidden="true"></span>
+        </div>
+        <div class="acc-body"><div class="acc-inner">
+          <div class="sub-acc">
+            <div class="sub-head" onclick="toggleSub(this)"><span class="st">Концептуальный проект</span><span class="sp"><b>от 200 ₽/м²</b><span class="sub-tog"></span></span></div>
+            <div class="sub-body"><div class="sub-inner"><ul>
+              <li>Кв. м площади застройки дома (от 200 ₽)</li>
+              <li>3D-модель</li>
+              <li>Визуализации (от 10 картинок с разных ракурсов)</li>
+            </ul></div></div>
+          </div>
+          <div class="sub-acc">
+            <div class="sub-head" onclick="toggleSub(this)"><span class="st">Эскизный проект</span><span class="sp"><b>от 300 ₽/м²</b><span class="sub-tog"></span></span></div>
+            <div class="sub-body"><div class="sub-inner"><ul>
+              <li>Планы с экспликацией помещений и осевыми размерами</li>
+              <li>Визуализации (от 5 картинок с разных ракурсов)</li>
+            </ul></div></div>
+          </div>
+          <div class="sub-acc">
+            <div class="sub-head" onclick="toggleSub(this)"><span class="st">Архитектурные решения, проектная стадия (П)</span><span class="sp"><b>от 500 ₽/м²</b><span class="sub-tog"></span></span></div>
+            <div class="sub-body"><div class="sub-inner"><ul>
+              <li>Кв. м общей площади дома (от 500 ₽)</li>
+              <li>Планы с экспликацией помещений и осевыми размерами</li>
+              <li>Планы этажей (маркировочные и кладочные)</li>
+              <li>План кровли</li>
+              <li>Разрезы</li>
+              <li>Фасады</li>
+              <li>Визуализации (от 5 картинок с разных ракурсов)</li>
+              <li>Видео-обзор проекта</li>
+            </ul></div></div>
+          </div>
+          <div class="sub-acc">
+            <div class="sub-head" onclick="toggleSub(this)"><span class="st">Архитектурные решения, рабочая стадия (АР)</span><span class="sp"><b>от 700 ₽/м²</b><span class="sub-tog"></span></span></div>
+            <div class="sub-body"><div class="sub-inner"><ul>
+              <li>Кв. м общей площади дома (от 700 ₽)</li>
+              <li>Планы с экспликацией помещений и осевыми размерами</li>
+              <li>Планы этажей (маркировочные и кладочные)</li>
+              <li>План кровли</li>
+              <li>Ведомость строительных материалов</li>
+              <li>Ведомость отделочных материалов</li>
+              <li>Спецификации заполнения оконных и дверных проёмов</li>
+              <li>Узлы, детали, выноски</li>
+              <li>Разрезы</li>
+              <li>Фасады</li>
+              <li>Визуализации (от 5 картинок с разных ракурсов)</li>
+              <li>Видео-обзор проекта</li>
+            </ul></div></div>
+          </div>
+          <div class="acc-note">
+            <b>Примечания:</b>
+            <p>Общая площадь дома — это сумма площадей всех этажей здания.</p>
+            <p>Площадь этажа — площадь, которая определяется внутри строительного объёма здания и измеряется между внутренними поверхностями ограждающих конструкций наружных стен (осей крайних колонн при отсутствии наружных стен) на уровне пола. В площадь этажа также включают площади балконов, лоджий, террас и веранд (навесов).</p>
+            <p>Площадь застройки — площадь, которая определяется по внешнему обводу здания на уровне первого этажа, включая выступающие части (входные площадки и ступени, веранды, террасы, приямки, входы в подвал).</p>
+          </div>
+        </div></div>
+      </div>
+
+      <!-- 2. Дизайн-проект -->
+      <div class="acc">
+        <div class="acc-head" onclick="toggleAcc(this)">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 3h18v18H3zM3 9h18M9 21V9"/></svg></span>
+          <div class="acc-titles"><h3>Дизайн-проект</h3><p>Полный дизайн-проект интерьера с чертежами, спецификациями и визуализациями.</p></div>
+          <div class="acc-price">от<b>3 500 ₽/м²</b></div>
+          <span class="acc-tog" aria-hidden="true"></span>
+        </div>
+        <div class="acc-body"><div class="acc-inner">
+          <div class="sub-acc">
+            <div class="sub-head" onclick="toggleSub(this)"><span class="st">Полный пакет</span><span class="sp"><b>3 500 ₽/м²</b><span class="sub-tog"></span></span></div>
+            <div class="sub-body"><div class="sub-inner"><ul>
+              <li>Концепция интерьера</li>
+              <li>Обмерный план (в&nbsp;3D-виде)</li>
+              <li>Планировочное решение (план сносимых и возводимых конструкций, 3D-виды)</li>
+              <li>Планы оконных и дверных проёмов (спецификации окон/дверей)</li>
+              <li>План потолка, карнизов</li>
+              <li>Планы монтажа сантехники (тёплые полы, радиаторы, терморегуляторы)</li>
+              <li>Обмерный план после перепланировки</li>
+              <li>План видов по стенам</li>
+              <li>План расстановки мебели (спецификация мебели)</li>
+              <li>План расстановки электрооборудования (спецификация электрики)</li>
+              <li>План расстановки осветительных приборов (спецификация)</li>
+              <li>План привязки выключателей (ведомость управления светом)</li>
+              <li>Развёртки стен по комнатам</li>
+              <li>Визуализации</li>
+            </ul></div></div>
+          </div>
+          <div class="sub-acc">
+            <div class="sub-head" onclick="toggleSub(this)"><span class="st">VIP-пакет</span><span class="sp"><b>по запросу</b><span class="sub-tog"></span></span></div>
+            <div class="sub-body"><div class="sub-inner"><ul>
+              <li>Концепция интерьера</li>
+              <li>Обмерный план (в&nbsp;3D-виде)</li>
+              <li>Планировочное решение (план сносимых и возводимых конструкций, 3D-виды)</li>
+              <li>Планы оконных и дверных проёмов (спецификации окон/дверей)</li>
+              <li>План потолка, карнизов</li>
+              <li>Планы монтажа сантехники (тёплые полы, радиаторы, терморегуляторы)</li>
+              <li>Обмерный план после перепланировки</li>
+              <li>План видов по стенам</li>
+              <li>План расстановки мебели (спецификация мебели)</li>
+              <li>План расстановки электрооборудования (спецификация электрики)</li>
+              <li>План расстановки осветительных приборов (спецификация)</li>
+              <li>План привязки выключателей (ведомость управления светом)</li>
+              <li>Развёртки стен по комнатам</li>
+              <li>Визуализации</li>
+              <li class="vip">Авторский надзор</li>
+              <li class="vip">Комплектация проекта</li>
+              <li class="vip">Эксклюзивные права на проект</li>
+              <li class="vip">Онлайн-поддержка 24/7</li>
+              <li class="vip">Инженерный раздел</li>
+            </ul></div></div>
+          </div>
+        </div></div>
+      </div>
+
+      <!-- 3. Строительство домов -->
+      <div class="acc">
+        <div class="acc-head" onclick="toggleAcc(this)">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21V7l9-4 9 4v14M3 21h18M8 21v-5h8v5M7 11h2M11 11h2M15 11h2"/></svg></span>
+          <div class="acc-titles"><h3>Строительство домов</h3><p>Полный цикл: фундамент, монолит, кладка, кровля, фасад и инженерные сети. Строим под ключ с гарантией.</p></div>
+          <div class="acc-price">цена<b>по проекту</b></div>
+          <span class="acc-tog" aria-hidden="true"></span>
+        </div>
+        <div class="acc-body"><div class="acc-inner">
+          <div class="lead">Что входит</div>
+          <ul>
+            <li>Земляные работы и устройство фундамента</li>
+            <li>Возведение стен и перекрытий</li>
+            <li>Кровля и фасадные работы</li>
+            <li>Инженерные сети: электрика, водоснабжение, отопление</li>
+            <li>Черновая и чистовая отделка по договору</li>
+            <li>Комплектация материалами и сопровождение объекта</li>
+          </ul>
+        </div></div>
+      </div>
+
+      <!-- 4. Ремонт помещений -->
+      <div class="acc">
+        <div class="acc-head" onclick="toggleAcc(this)">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 4l6 6M4 20l1-5 9-9 4 4-9 9-5 1zM13 5l4 4"/></svg></span>
+          <div class="acc-titles"><h3>Ремонт помещений</h3><p>Ремонт квартир, домов и коммерческих помещений — от черновой отделки до дизайнерского ремонта под ключ.</p></div>
+          <div class="acc-price">цена<b>по запросу</b></div>
+          <span class="acc-tog" aria-hidden="true"></span>
+        </div>
+        <div class="acc-body"><div class="acc-inner">
+          <div class="lead">Что входит</div>
+          <ul>
+            <li>Демонтажные работы</li>
+            <li>Черновая отделка (стяжка, штукатурка)</li>
+            <li>Электромонтаж и сантехнические работы</li>
+            <li>Чистовая отделка стен, полов и потолков</li>
+            <li>Установка дверей, сантехники и освещения</li>
+            <li>Финишная уборка и сдача объекта</li>
+          </ul>
+        </div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div><span class="logo"><span class="txt"><b>IDIS<sup>&reg;</sup></b><span>COMPANY</span></span></span></div>
+      <nav class="foot-nav">
+        <a href="about.html">О компании</a>
+        <a href="projects.html">Проекты</a>
+        <a href="services.html">Услуги</a>
+        <a href="prices.html">Цены</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+      <a href="tel:+79639877733" class="btn btn-ghost">8 963 987-77-33</a>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 IDIS Company. Строительство · Проектирование · Дизайн.</span>
+      <span>г. Грозный, ул. Геннадия Трошева, 83а · Чеченская Республика</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const mm=document.getElementById('mobileMenu');
+  document.getElementById('burger').onclick=()=>mm.classList.add('open');
+  document.getElementById('mclose').onclick=()=>mm.classList.remove('open');
+  mm.querySelectorAll('a').forEach(a=>a.onclick=()=>mm.classList.remove('open'));
+
+  function toggleAcc(head){
+    const acc=head.parentElement, body=head.nextElementSibling, open=acc.classList.contains('open');
+    acc.classList.toggle('open');
+    if(open){ body.style.maxHeight=body.scrollHeight+'px'; requestAnimationFrame(()=>{body.style.maxHeight=null;}); }
+    else { body.style.maxHeight=body.scrollHeight+'px'; body.addEventListener('transitionend',function te(){ if(acc.classList.contains('open'))body.style.maxHeight='none'; body.removeEventListener('transitionend',te); }); }
+  }
+  function toggleSub(head){
+    const sub=head.parentElement, body=head.nextElementSibling, open=sub.classList.contains('open');
+    sub.classList.toggle('open');
+    if(open){ body.style.maxHeight=body.scrollHeight+'px'; requestAnimationFrame(()=>{body.style.maxHeight=null;}); }
+    else { body.style.maxHeight=body.scrollHeight+'px'; }
+  }
+</script>
+</body>
+</html>

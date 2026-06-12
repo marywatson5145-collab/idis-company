@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Реализованные объекты — IDIS Company (ИДИС Компани), Грозный</title>
+<meta name="description" content="Реализованные проекты IDIS Company: частные дома под ключ, архитектурные и дизайн-проекты, ремонт квартир и коммерческих помещений в Грозном.">
+<link rel="stylesheet" href="style.css">
+<style>
+  .page-head{padding:56px 0 10px}
+  .page-head .num{font-size:18px;letter-spacing:.2em;color:var(--red);font-weight:700}
+  .page-head h1{font-size:clamp(24px,2.6vw,32px);font-weight:800;letter-spacing:-.01em;text-transform:uppercase;margin-top:12px;line-height:1.1}
+  .page-head p{color:var(--grey);font-size:16px;margin-top:18px;max-width:60ch}
+  .gal{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;padding:50px 0 110px}
+  .gal figure{position:relative;margin:0;overflow:hidden;border:1px solid var(--line);aspect-ratio:4/3;background:var(--bg-2)}
+  .gal figure.big{grid-column:span 2;aspect-ratio:16/7}
+  .gal img{width:100%;height:100%;object-fit:cover;display:block;transition:.6s}
+  .gal figure:hover img{transform:scale(1.05)}
+  .gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:22px;background:linear-gradient(0deg,rgba(6,6,7,.9),rgba(6,6,7,.2) 60%,transparent);z-index:2}
+  .gal figcaption .t{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--red);font-weight:700}
+  .gal figcaption h3{font-size:20px;font-weight:700;margin-top:6px}
+  .gal figcaption span{display:block;color:var(--grey);font-size:13px;margin-top:4px}
+  @media(max-width:760px){.gal{grid-template-columns:1fr}.gal figure,.gal figure.big{aspect-ratio:4/3;grid-column:auto}}
+</style>
+</head>
+<body>
+
+<header id="header" style="background:rgba(12,12,13,.95);border-bottom:1px solid var(--line)">
+  <div class="wrap nav">
+    <a href="index.html" class="logo" aria-label="IDIS Company"><span class="txt"><b>IDIS<sup>&reg;</sup></b><span>COMPANY</span></span></a>
+    <span class="head-tag">Строительство · Проектирование · Дизайн · Комплектация · Ремонт</span>
+    <a href="tel:+79639877733" class="nav-phone">8 963 987-77-33</a>
+    <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mtop"><span class="logo"><span class="txt"><b>IDIS<sup>&reg;</sup></b><span>COMPANY</span></span></span><button class="mclose" id="mclose" aria-label="Закрыть">&times;</button></div>
+  <a href="index.html">Главная</a>
+  <a href="about.html">О компании</a>
+  <a href="projects.html">Проекты</a>
+  <a href="services.html">Услуги</a>
+  <a href="prices.html">Цены</a>
+  <a href="contacts.html">Контакты</a>
+  <a href="tel:+79639877733" style="border:0;color:var(--red)">8 963 987-77-33</a>
+</div>
+
+<section class="hero-nav" style="padding-top:110px">
+  <div class="wrap">
+    <a class="pill" href="index.html#about">О компании</a>
+    <a class="pill" href="projects.html">Проекты</a>
+    <a class="pill active" href="objects.html">Реализованные объекты</a>
+    <a class="pill" href="services.html">Услуги</a>
+    <a class="pill" href="prices.html">Цены</a>
+    <a class="pill" href="reviews.html">Отзывы</a>
+    <a class="pill" href="contacts.html">Контакты</a>
+  </div>
+</section>
+
+<section class="sec-pad" style="padding-top:0">
+  <div class="wrap">
+    <div class="page-head">
+      <span class="num">Реализованные объекты</span>
+      <h1>Реализованные объекты</h1>
+      <p>Фотографии наших работ: частные дома под ключ, архитектурные и дизайн-проекты, ремонт квартир, домов и коммерческих помещений.</p>
+    </div>
+
+    <div class="gal">
+      <figure class="big">
+        <img src="hero.jpg" alt="Современный частный дом — IDIS Company" onerror="this.style.display='none'">
+        <figcaption><div class="t">Строительство</div><h3>Частный дом, монолит</h3><span>Чеченская Республика · под ключ</span></figcaption>
+      </figure>
+      <figure>
+        <img src="house.jpg" alt="Частный дом под ключ" onerror="this.style.display='none'">
+        <figcaption><div class="t">Строительство</div><h3>Частные дома под ключ</h3><span>Комплектация и сопровождение</span></figcaption>
+      </figure>
+      <figure>
+        <img src="architect.jpg" alt="Архитектурный проект" onerror="this.style.display='none'">
+        <figcaption><div class="t">Проектирование</div><h3>Архитектурный проект</h3><span>Чертежи, 3D, визуализации</span></figcaption>
+      </figure>
+      <figure>
+        <img src="design.jpg" alt="Дизайн-проект интерьера" onerror="this.style.display='none'">
+        <figcaption><div class="t">Проектирование</div><h3>Дизайн-проект</h3><span>Разработка, чертежи, авторский надзор</span></figcaption>
+      </figure>
+      <figure>
+        <img src="flat.jpg" alt="Ремонт квартиры" onerror="this.style.display='none'">
+        <figcaption><div class="t">Ремонт</div><h3>Квартиры, дома</h3><span>Реализация ремонта «под ключ»</span></figcaption>
+      </figure>
+      <figure class="big">
+        <img src="commercial.jpg" alt="Коммерческое помещение" onerror="this.style.display='none'">
+        <figcaption><div class="t">Ремонт</div><h3>Коммерческие помещения</h3><span>Дизайн, инженерия, авторский надзор</span></figcaption>
+      </figure>
+    </div>
+
+    <p style="color:var(--grey-2);font-size:13px;font-style:italic;padding-bottom:40px">* Здесь будут все фотографии ваших объектов — пришлите, и я добавлю их в галерею.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div><span class="logo"><span class="txt"><b>IDIS<sup>&reg;</sup></b><span>COMPANY</span></span></span></div>
+      <nav class="foot-nav">
+        <a href="about.html">О компании</a>
+        <a href="projects.html">Проекты</a>
+        <a href="services.html">Услуги</a>
+        <a href="prices.html">Цены</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+      <a href="tel:+79639877733" class="btn btn-ghost">8 963 987-77-33</a>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 IDIS Company. Строительство · Проектирование · Дизайн.</span>
+      <span>г. Грозный, ул. Геннадия Трошева, 83а · Чеченская Республика</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const mm=document.getElementById('mobileMenu');
+  document.getElementById('burger').onclick=()=>mm.classList.add('open');
+  document.getElementById('mclose').onclick=()=>mm.classList.remove('open');
+  mm.querySelectorAll('a').forEach(a=>a.onclick=()=>mm.classList.remove('open'));
+</script>
+</body>
+</html>
